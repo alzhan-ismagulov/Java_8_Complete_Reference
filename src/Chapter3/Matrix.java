@@ -1,6 +1,6 @@
 package Chapter3;
 
-//Инициализировать двухмерный массив
+//Initialize a two-dimensional array
 class Matrix {
     public static void main(String[] args) {
         double m[][] = {

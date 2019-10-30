@@ -1,6 +1,8 @@
 package Chapter3;
 
-//Продемонстировать область видимости блока кода
+/**
+ * Продемонстировать область видимости блока кода
+ */
 class Scope {
     public static void main(String[] args) {
         int x; //Эта переменная доступна всему коду из метода main()
@@ -10,8 +12,7 @@ class Scope {
             System.out.println("х и у: " + x + " " + y);
             x = y * 2;
         }
-        //y = 100;
-        // ОШИБКА! Переменная у недоступна в этой области действия, тогда как переменная х доступна и здесь
+        //y = 100; MISTAKE! The variable y is not available in this scope, while the variable x is available here too
         System.out.println("x равно " + x);
     }
 }
